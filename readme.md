@@ -22,17 +22,17 @@ Before using this tool, ensure you have:
    ```
 
 2. Configure your environment variables:
-   - **GITHUB_PAT**: Your GitHub personal access token.
-   - **GITHUB_USERNAME**: Your GitHub username.
+   - **GH_PERSONAL_ACCESS_TOKEN**: Your GitHub personal access token.
+   - **GH_USERNAME**: Your GitHub username.
    - **TELEGRAM_BOT_TOKEN**: Your Telegram bot token.
    - **CHAT_ID**: Your Telegram chat ID (the recipient of notifications).
 
    You can set these variables in a `.env` file:
    ```env
-   GITHUB_PAT=your_personal_access_token
-   GITHUB_USERNAME=your_github_username
+   GH_PERSONAL_ACCESS_TOKEN=your_personal_access_token
+   GH_USERNAME=your_github_username
    TELEGRAM_BOT_TOKEN=your_bot_token
-   TELEGRAM_CHAT_ID=your_chat_id
+   CHAT_ID=your_chat_id
    ```
 
 ## Usage
