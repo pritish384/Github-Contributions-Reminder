@@ -30,7 +30,7 @@ Before using this tool, ensure you have:
    CHAT_ID=your_chat_id
    ```
 
-3. Setup corn job as per your choice to run the script daily in workflow file:
+3. Setup cron job as per your choice to run the script daily in workflow file:
    ```yaml
    on:
      schedule:
