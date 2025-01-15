@@ -10,18 +10,13 @@ GitHub Contributions Reminder is a productivity tool that helps you stay consist
 
 ## Prerequisites
 Before using this tool, ensure you have:
-- Python installed.
 - A GitHub account.
 - A Telegram account and a bot token (you can create a bot using the [BotFather](https://core.telegram.org/bots#botfather)).
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/pritish384/Github-Contributions-Reminder
-   cd github-contributions-reminder
-   ```
+## Usage
+1. Fork this repository: Click the Fork button in the top right corner of the repository.
 
-2. Configure your environment variables:
+2. Configure your environment variables in repository secrets:
    - **GH_PERSONAL_ACCESS_TOKEN**: Your GitHub personal access token.
    - **GH_USERNAME**: Your GitHub username.
    - **TELEGRAM_BOT_TOKEN**: Your Telegram bot token.
@@ -35,15 +30,14 @@ Before using this tool, ensure you have:
    CHAT_ID=your_chat_id
    ```
 
-## Usage
-1. Run the script:
-   ```bash
-   python ./src/main.py
+3. Setup corn job as per your choice to run the script daily in workflow file:
+   ```yaml
+   on:
+     schedule:
+       - cron: '0 0 * * *'
    ```
-   **Schedule it to run automatically using AWS Lambda, CloudWatch, Linux cron job, or any other scheduling service.**
 
-
-2. Check your Telegram for notifications if you haven't made a contributions for the day.
+4. Check your Telegram for notifications if you haven't made a contributions for the day.
 
 ## Contributing
 Contributions are welcome! If you have ideas for features or improvements, feel free to fork the repository and submit a pull request.
